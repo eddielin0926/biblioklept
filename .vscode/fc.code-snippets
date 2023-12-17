@@ -1,0 +1,25 @@
+{
+  "Create React Native function component": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rnfc",
+    "body": [
+      "import React from \"react\";",
+      "import { StyleSheet, Text, View } from \"react-native\";",
+      "",
+      "const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}: React.FC = () => {",
+      "  return (",
+      "    <View style={styles.${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}}>",
+      "      <Text>$2</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};",
+      "",
+      "const styles = StyleSheet.create({",
+      "  ${TM_FILENAME_BASE/(.*)/${1:/camelcase}/}: {$3}",
+      "});"
+    ],
+    "description": "Create React Native function component"
+  }
+}
