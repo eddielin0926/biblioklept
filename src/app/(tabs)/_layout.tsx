@@ -1,3 +1,4 @@
+import React from "react";
 import { Tabs } from "expo-router/tabs";
 import { MaterialIcons } from "@expo/vector-icons";
 

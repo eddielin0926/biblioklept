@@ -1,4 +1,3 @@
-import { shadow } from "@/styles";
 import React from "react";
 import {
   GestureResponderEvent,
@@ -7,6 +6,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { shadow } from "@/styles";
 
 type BookListItemProps = {
   read?: boolean;
