@@ -1,13 +1,12 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "production": [
-      "default"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": ["default"],
     "sharedGlobals": []
   },
   "nxCloudAccessToken": "Mjg5NmFlYjctYTEwOC00ZDgwLWE4NDktYWI0NjZjYmZkNjk4fHJlYWQtd3JpdGU="

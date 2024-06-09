@@ -9,5 +9,9 @@
     "@nx/js": "19.2.2",
     "@nx/workspace": "19.2.2",
     "nx": "19.2.2"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
