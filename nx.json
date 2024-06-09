@@ -9,5 +9,21 @@
     "production": ["default"],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "Mjg5NmFlYjctYTEwOC00ZDgwLWE4NDktYWI0NjZjYmZkNjk4fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "Mjg5NmFlYjctYTEwOC00ZDgwLWE4NDktYWI0NjZjYmZkNjk4fHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/expo/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "prebuildTargetName": "prebuild",
+        "serveTargetName": "serve",
+        "installTargetName": "install",
+        "exportTargetName": "export",
+        "submitTargetName": "submit",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android"
+      }
+    }
+  ]
 }
