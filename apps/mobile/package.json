@@ -1,0 +1,19 @@
+{
+  "name": "mobile",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "metro-config": "*",
+    "react-native": "*",
+    "expo": "*",
+    "react-native-svg": "*",
+    "react-native-web": "*"
+  },
+  "scripts": {
+    "build": "eas build --platform android",
+    "eas-build-pre-install": "cd ../../ && bun tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp bun.lockb apps/mobile",
+    "eas-build-post-install": "cd ../../ && bun tools/scripts/eas-build-post-install.mjs . apps/mobile"
+  }
+}
