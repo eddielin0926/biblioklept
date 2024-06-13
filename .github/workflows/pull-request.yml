@@ -1,0 +1,17 @@
+name: Pull Request
+
+on:
+  pull_request:
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Environment
+        uses: ./github/workflows/setup.yml
+
+      - name: Lint
+        run: bun nx affected -t lint
+
+      - name: Test
+        run: bun nx affected -t test
