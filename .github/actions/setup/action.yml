@@ -12,3 +12,6 @@ runs:
     - name: Install dependencies
       run: bun install --no-cache
       shell: bash
+
+    - name: Get SHAs (BASE & HEAD) For `nx affected`
+      uses: nrwl/nx-set-shas@v4
