@@ -13,7 +13,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Environment
-        uses: ./github/workflows/setup.yml
+        uses: ./github/actions/setup
 
       - name: Lint
         run: bun nx affected -t lint
