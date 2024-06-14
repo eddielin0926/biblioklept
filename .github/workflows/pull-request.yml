@@ -1,0 +1,22 @@
+name: Pull Request
+
+on:
+  pull_request:
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Environment
+        uses: ./.github/actions/setup
+
+      - name: Lint
+        run: bunx nx affected -t lint
+
+      - name: Test
+        run: bunx nx affected -t test
