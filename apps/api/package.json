@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts"
+  },
+  "dependencies": {
+    "hono": "*"
+  },
+  "devDependencies": {
+    "@types/bun": "*"
+  }
+}
